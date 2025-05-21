@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:proyecto_moviles2/logica/firebaseAuth.dart';
-import 'dashboard.dart';
 import 'package:proyecto_moviles2/logica/register.dart';
 
 class LoginPage extends StatefulWidget {
@@ -30,12 +29,6 @@ class _LoginPageState extends State<LoginPage> {
 
     try {
       final user = await _authService.login(email, password);
-      if (user != null && mounted) {
-        Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(builder: (_) => const HomePage()),
-        );
-      }
     } catch (e) {
       _showSnackBar(e.toString().replaceAll('Exception: ', ''));
     } finally {

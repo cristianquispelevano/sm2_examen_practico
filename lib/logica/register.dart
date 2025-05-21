@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:proyecto_moviles2/vista/dashboard.dart';
 import 'firebaseAuth.dart';
 import 'package:proyecto_moviles2/vista/login.dart';
 
@@ -24,12 +23,6 @@ class _RegisterPageState extends State<RegisterPage> {
         _emailController.text.trim(),
         _passwordController.text.trim(),
       );
-      if (user != null && mounted) {
-        Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(builder: (_) => const HomePage()),
-        );
-      }
     } catch (e) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text(e.toString().replaceAll('Exception: ', ''))),
