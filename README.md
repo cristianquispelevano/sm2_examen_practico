@@ -15,7 +15,7 @@ Este sistema permite a los usuarios crear solicitudes de soporte (tickets), clas
 ### ✅ autenticacion de usuario: nombre de usuario 
 nombre usuario - hola
 password - 456789
-
+![Autenticacion ](imagenes/autenticacion.png)
 ### ✅ Historia 1: Crear ticket
 
 **Como usuario**, quiero poder registrar un ticket indicando un título, descripción, prioridad y categoría, para que el equipo de soporte atienda mi problema.
@@ -23,6 +23,10 @@ password - 456789
 - Validación de campos en formulario
 - Registro del ticket en Firestore
 - Feedback visual al usuario
+📸 **Captura de pantalla del home principal:**
+
+![Crear Ticket](imagenes/sistema.png)
+
 
 📸 **Captura de pantalla del formulario de creación:**
 
