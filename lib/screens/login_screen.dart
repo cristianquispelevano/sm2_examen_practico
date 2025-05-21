@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'home_screen.dart';
-import 'register_screen.dart'; // Importamos la nueva pantalla de registro
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -73,13 +72,6 @@ class _LoginScreenState extends State<LoginScreen> {
     }
   }
 
-  void _navigateToRegister() {
-    Navigator.push(
-      context,
-      MaterialPageRoute(builder: (context) => RegisterScreen()),
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -121,11 +113,6 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                     child: Text('Iniciar Sesión'),
                   ),
-            SizedBox(height: 16),
-            TextButton(
-              onPressed: _navigateToRegister,
-              child: Text('¿No tienes cuenta? Regístrate aquí'),
-            ),
           ],
         ),
       ),
