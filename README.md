@@ -60,10 +60,14 @@ password - 456789
 ## 🗂️ Estructura del proyecto
 
 lib/
+ # Modelos Ticket y Comentario
 ├── model/
-│ └── ticket_model.dart # Modelos Ticket y Comentario
+│ └── ticket_model.dart
+# Lógica de Firestore para tickets
 ├── services/
-│ └── ticket_service.dart # Lógica de Firestore para tickets
+│ └── ticket_service.dart 
 ├── screens/
-│ ├── create_ticket_screen.dart # Pantalla de creación de tickets
-│ └── view_tickets_screen.dart # Listado de tickets del usuario
+# Pantalla de creación de tickets
+│ ├── create_ticket_screen.dart 
+# Listado de tickets del usuario
+│ └── view_tickets_screen.dart 
